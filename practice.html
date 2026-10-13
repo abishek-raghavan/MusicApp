@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Practice | Guitar Practice Trainer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/practice.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        🎸 Guitar Practice Trainer
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="learn.html">Learn Chords</a>
+        <a href="practice.html">Practice</a>
+
+    </div>
+
+</nav>
+
+<div class="container">
+
+    <h1>Practice Session</h1>
+
+    <div class="settings">
+
+        <!-- BPM -->
+
+        <div class="setting-card">
+
+            <h2>Tempo</h2>
+
+            <div id="bpmValue">80 BPM</div>
+
+            <input
+                id="bpmSlider"
+                type="range"
+                min="40"
+                max="200"
+                value="80">
+
+        </div>
+
+        <!-- Time Signature -->
+
+        <div class="setting-card">
+
+            <h2>Time Signature</h2>
+
+            <select id="timeSignature">
+
+                <option value="2">2 / 4</option>
+                <option value="3">3 / 4</option>
+                <option value="4" selected>4 / 4</option>
+                <option value="6">6 / 8</option>
+
+            </select>
+
+        </div>
+
+        <!-- Change Beat -->
+
+        <div class="setting-card">
+
+            <h2>Change Chord On</h2>
+
+            <select id="changeBeat">
+
+                <option value="1">Every Beat</option>
+                <option value="2">Beat 2</option>
+                <option value="3">Beat 3</option>
+                <option value="4">Beat 4</option>
+                <option value="6">Beat 6</option>
+
+            </select>
+
+        </div>
+
+        <!-- Metronome -->
+
+        <div class="setting-card">
+
+            <h2>Metronome</h2>
+
+            <label>
+
+                <input
+                    id="metronome"
+                    type="checkbox"
+                    checked>
+
+                Enable Tick
+
+            </label>
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button id="startBtn">
+
+            ▶ Start Practice
+
+        </button>
+
+        <button id="stopBtn">
+
+            ■ Stop
+
+        </button>
+
+    </div>
+
+    <div class="practice-area">
+
+        <div class="beat-box">
+
+            <h3>Beat</h3>
+
+            <div id="beatNumber">
+
+                1
+
+            </div>
+
+        </div>
+
+        <div class="chord-box">
+
+            <h3>Current Chord</h3>
+
+            <div id="currentChord">
+
+                C
+
+            </div>
+
+        </div>
+
+        <div class="next-box">
+
+            <h3>Next Chord</h3>
+
+            <div id="nextChord">
+
+                G
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="beat-indicator">
+
+        <div class="circle" id="b1">1</div>
+        <div class="circle" id="b2">2</div>
+        <div class="circle" id="b3">3</div>
+        <div class="circle" id="b4">4</div>
+        <div class="circle" id="b5">5</div>
+        <div class="circle" id="b6">6</div>
+
+    </div>
+
+</div>
+
+<script src="js/practice.js"></script>
+
+</body>
+
+</html>
